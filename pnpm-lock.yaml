@@ -11,6 +11,7 @@ specifiers:
   postcss-cli: ^8.3.1
   postcss-load-config: ^3.1.0
   postcss-mixins: ^8.1.0
+  postcss-normalize: ^10.0.0
   postcss-preset-env: ^6.7.0
   postcss-reporter: ^7.0.2
   postcss-size: ^4.0.1
@@ -23,6 +24,7 @@ dependencies:
   glob: 7.1.7
   postcss-load-config: 3.1.0
   postcss-mixins: 8.1.0_postcss@8.3.5
+  postcss-normalize: 10.0.0_postcss@8.3.5
   postcss-preset-env: 6.7.0
   postcss-reporter: 7.0.2_postcss@8.3.5
   postcss-size: 4.0.1_postcss@8.3.5
@@ -276,6 +278,10 @@ packages:
   /@csstools/convert-colors/1.4.0:
     resolution: {integrity: sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==}
     engines: {node: '>=4.0.0'}
+    dev: false
+
+  /@csstools/normalize.css/11.0.1:
+    resolution: {integrity: sha512-kUlWZHQkll+lOlYdj7dg8XwziO9WALkfG2dAXLITZMB8gO99CXQBH5W/HleXC3YwWFWXVxe1UClMk/2qsB9oAw==}
     dev: false
 
   /@eslint/eslintrc/0.4.2:
@@ -1808,6 +1814,16 @@ packages:
       postcss-selector-parser: 6.0.6
     dev: false
 
+  /postcss-browser-comments/4.0.0_postcss@8.3.5:
+    resolution: {integrity: sha512-X9X9/WN3KIvY9+hNERUqX9gncsgBA25XaeR+jshHz2j8+sYyHktHw1JdKuMjeLpGktXidqDhA7b/qm1mrBDmgg==}
+    engines: {node: '>=8'}
+    peerDependencies:
+      browserslist: '>=4'
+      postcss: '>=8'
+    dependencies:
+      postcss: 8.3.5
+    dev: false
+
   /postcss-cli/8.3.1_postcss@8.3.5:
     resolution: {integrity: sha512-leHXsQRq89S3JC9zw/tKyiVV2jAhnfQe0J8VI4eQQbUjwIe0XxVqLrR+7UsahF1s9wi4GlqP6SJ8ydf44cgF2Q==}
     engines: {node: '>=10'}
@@ -2024,6 +2040,19 @@ packages:
     engines: {node: '>=6.0.0'}
     dependencies:
       postcss: 7.0.36
+    dev: false
+
+  /postcss-normalize/10.0.0_postcss@8.3.5:
+    resolution: {integrity: sha512-krYZhIfZ6TIbMSXI4JpIWU64CPHCzXNbyCgHAJdZXirBpgTLRoB4+bSA17zvMLlst6SrdL9yfyTdGQlxS5poeg==}
+    engines: {node: '>= 12'}
+    peerDependencies:
+      browserslist: '>= 4'
+      postcss: '>= 8'
+    dependencies:
+      '@csstools/normalize.css': 11.0.1
+      postcss: 8.3.5
+      postcss-browser-comments: 4.0.0_postcss@8.3.5
+      sanitize.css: 12.0.1
     dev: false
 
   /postcss-overflow-shorthand/2.0.0:
@@ -2346,6 +2375,10 @@ packages:
     dependencies:
       regexp-tree: 0.1.23
     dev: true
+
+  /sanitize.css/12.0.1:
+    resolution: {integrity: sha512-QbusSBnWHaRBZeTxsJyknwI0q+q6m1NtLBmB76JfW/rdVN7Ws6Zz70w65+430/ouVcdNVT3qwrDgrM6PaYyRtw==}
+    dev: false
 
   /semver/5.7.1:
     resolution: {integrity: sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==}

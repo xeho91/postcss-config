@@ -1,7 +1,7 @@
 {
 	"$schema": "https://json.schemastore.org/package",
 	"name": "@xeho91/postcss-config",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"description": "xeho91's PostCSS reusable configuration.",
 	"keywords": [
 		"PostCSS",
@@ -50,13 +50,14 @@
 		"typescript": "^4.3.4"
 	},
 	"peerDependencies": {
-		"postcss": "latest"
+		"postcss": "^8.3.5"
 	},
 	"dependencies": {
 		"autoprefixer": "^10.2.6",
 		"glob": "^7.1.7",
 		"postcss-load-config": "^3.1.0",
 		"postcss-mixins": "^8.1.0",
+		"postcss-normalize": "^10.0.0",
 		"postcss-preset-env": "^6.7.0",
 		"postcss-reporter": "^7.0.2",
 		"postcss-size": "^4.0.1"
