@@ -1,0 +1,20 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "CommonJS",
+		"moduleResolution": "node",
+
+		"outDir": "./dist",
+		"rootDir": "./source",
+
+		"declaration": false,
+
+		"types": ["node"],
+
+		"skipLibCheck": true,
+		"esModuleInterop": true
+	},
+	"include": ["source/**/*"],
+	"exclude": ["node_modules/"]
+}
